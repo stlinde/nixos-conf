@@ -29,6 +29,7 @@
   # Import configurations
   imports = [
     ./programs/tmux
+    ./programs/kitty
   ];
 
   # basic configuration of git, please change to your own

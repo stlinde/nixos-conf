@@ -110,7 +110,6 @@
     xwayland
     firefox
     kitty
-    tmux
   ];
 
   fonts.packages = with pkgs; [
