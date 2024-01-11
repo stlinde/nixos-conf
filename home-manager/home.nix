@@ -26,6 +26,11 @@
     "Xft.dpi" = 172;
   };
 
+  # Import configurations
+  imports = [
+    ./programs/tmux
+  ];
+
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
