@@ -6,5 +6,8 @@ in
   programs.tmux = {
     enable = true;
     extraConfig = tmuxConf;
+    plugins = with pkgs; [
+      tmuxPlugins.nord
+    ];
   };
 }
