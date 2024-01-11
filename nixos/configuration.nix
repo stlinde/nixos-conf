@@ -112,6 +112,10 @@
     tmux
   ];
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "RobotoMono" ]; })
+  ];
+
 
   programs.hyprland = {
     enable = true;
