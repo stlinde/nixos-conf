@@ -85,6 +85,7 @@
     description = "Sebastian Hempel Linde";
     extraGroups = [ "networkmanager" "wheel" "audio" ];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
 
   # Enable Flakes and the new command-line tool
@@ -120,6 +121,10 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+  };
+
+  programs.zsh = {
+    enable = true;
   };
 
   programs.neovim = {
