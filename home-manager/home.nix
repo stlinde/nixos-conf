@@ -30,6 +30,7 @@
   imports = [
     ./programs/tmux
     ./programs/kitty
+    ./dev/cc.nix
     ./gtk-theme.nix
     ./ags.nix
     ./hyprland.nix
@@ -48,7 +49,9 @@
     which
     brightnessctl
     hyprpicker
-
+    zig
+    gtk4
+    gh
     # nix related
     #
     # it provides the command `nom` works just like `nix`

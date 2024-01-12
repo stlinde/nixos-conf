@@ -17,9 +17,12 @@
     
     # Hyprland
     hyprland.url = "github:hyprwm/Hyprland";
+
+    # Zig
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, hyprland, zig, ... }: {
     nixosConfigurations = {
       # TODO please change the hostname to your own
       nixos = nixpkgs.lib.nixosSystem {
