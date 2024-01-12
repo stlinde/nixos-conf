@@ -46,6 +46,8 @@
   home.packages = with pkgs; [
     neofetch
     which
+    brightnessctl
+    hyprpicker
 
     # nix related
     #
