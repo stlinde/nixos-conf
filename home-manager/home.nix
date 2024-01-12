@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   # TODO please change the username & home direcotry to your own
@@ -30,6 +30,8 @@
   imports = [
     ./programs/tmux
     ./programs/kitty
+    ./gtk-theme.nix
+    ./ags.nix
   ];
 
   # basic configuration of git, please change to your own
@@ -98,7 +100,7 @@
       vi = "nvim";
     };
   };
-
+  
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new home Manager release introduces backwards

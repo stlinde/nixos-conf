@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./hyprland.nix
     ];
 
   # Bootloader.
@@ -101,7 +102,7 @@
   #  wget
     git
     gcc
-    hyprland
+    # hyprland
     swww
     pipewire
     pavucontrol
@@ -117,10 +118,10 @@
   ];
 
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # programs.hyprland = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
 
   programs.zsh = {
     enable = true;
