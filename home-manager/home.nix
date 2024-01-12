@@ -32,6 +32,7 @@
     ./programs/kitty
     ./gtk-theme.nix
     ./ags.nix
+    ./hyprland.nix
   ];
 
   # basic configuration of git, please change to your own
